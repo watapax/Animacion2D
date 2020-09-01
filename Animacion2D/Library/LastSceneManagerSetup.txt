@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Clase 01/clase 01 vacia.unity
+- path: Assets/Clase 02/Clase 02 vacia.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
