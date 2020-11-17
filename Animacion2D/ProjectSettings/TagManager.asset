@@ -6,6 +6,7 @@ TagManager:
   tags:
   - espada
   - plataforma
+  - pelota
   layers:
   - Default
   - TransparentFX
