@@ -6,7 +6,7 @@ public class ControlPersonaje : MonoBehaviour
 {
 
     public Animator animator;
-
+    public string accion1, accion2, accion3;
     // Detectar input de teclado (flechas)
     // Mover al gameObject segun la direccion de la flecha
     // almacenar en variable la direccion
@@ -23,25 +23,19 @@ public class ControlPersonaje : MonoBehaviour
         // el parametro caminando es verdadero cuando inputX no es cero
         animator.SetBool("caminando", inputX != 0);
 
-        // si aprete el boton Salto, reproducir animacion ravenSalto
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetKeyDown(KeyCode.Alpha1))
         {
-            // acceder al animator y darle play a la animacion
-            animator.Play("ravenSalto");
+            animator.Play(accion1);
         }
 
-
-        // si aprete el boton Fire1 ejecuta animacion accion1
-        // si aprete el boton Fire2 ejecuta animacion accion2
-
-        if(Input.GetButtonDown("Fire1"))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            animator.Play("accion1");
+            animator.Play(accion2);
         }
 
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            animator.Play("accion2");
+            animator.Play(accion3);
         }
 
     }
